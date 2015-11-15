@@ -6,15 +6,15 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
-    color: #777;
+    color: #666;
 }
 
 .text-primary {
-    color: #15baff;
+    color: #27BDA0;
 }
 
 p {
@@ -32,10 +32,13 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
+     -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
 }
 
 a {
-    color: #15baff;
+    color: #27BDA0;
 }
 
 a:hover,
@@ -52,7 +55,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -69,12 +72,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #15baff;
+    border-color: #27BDA0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #15baff;
+    background-color: #27BDA0;
 }
 
 .btn-primary:hover,
@@ -108,25 +111,26 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #15baff;
-    background-color: #15baff;
+    border-color: #27BDA0;
+    background-color: #27BDA0;
 }
 
 .btn-primary .badge {
-    color: #15baff;
+    color: #27BDA0;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 18px 38px;
-    border-color: #15baff;
+    border-color: #27bda0;
+    border-width: 3px;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
-    background-color: #15baff;
+    /*background-color: #27BDA0;*/
 }
 
 .btn-xl:hover,
@@ -134,9 +138,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #1195cd;
+    border-color: #27bda0;
     color: #fff;
-    background-color: #1195cd;
+    background-color: #27bda0;
 }
 
 .btn-xl:active,
@@ -160,12 +164,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #15baff;
-    background-color: #15baff;
+    border-color: #27BDA0;
+    background-color: #27BDA0;
 }
 
 .btn-xl .badge {
-    color: #15baff;
+    color: #27BDA0;
     background-color: #fff;
 }
 
@@ -176,7 +180,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #15baff;
+    color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -191,8 +195,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #15baff;
-    background-color: #15baff;
+    border-color: #27BDA0;
+    background-color: #27BDA0;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -201,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #15baff;
+    background-color: #27BDA0;
 }
 
 .navbar-default .nav li a {
@@ -215,13 +219,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #15baff;
+    color: #27BDA0;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #15baff;
+    background-color: #27BDA0;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -291,15 +295,16 @@ header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 45px;
+    font-weight: 400;
     line-height: 50px;
+    text-shadow: 0px 5px 51.41px rgba(0, 0, 0, 0.5);
 }
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 250px; /* padding-top: 300px; */
+        padding-bottom: 13%;  /* padding-bottom: 200px */
     }
 
     header .intro-text .intro-lead-in {
@@ -314,14 +319,14 @@ header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 60px;
-        font-weight: 700;
+        font-size: 45px;
+        font-weight: 400;
         line-height: 75px;
     }
 }
 
 section {
-    padding: 100px 0;
+        padding: 80px 0px 20px 0px;        /*padding: 100px 0;*/
 }
 
 section h2.section-heading {
@@ -333,16 +338,16 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: "Fira Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 28px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 80px 0px 30px 0px;        /*padding: 150px 0;*/
     }
 }
 
@@ -494,7 +499,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #15baff;
+    background-color: #27BDA0;
 }
 
 .timeline>li .timeline-image h4 {
@@ -655,8 +660,8 @@ aside.clients img {
 section#contact {
     background-color: #222;
     background-image: url(../img/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center center;
+background-size: cover;
 }
 
 section#contact .section-heading {
@@ -681,7 +686,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #15baff;
+    border-color: #27BDA0;
     box-shadow: none;
 }
 
@@ -743,11 +748,11 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 34px;
     outline: 0;
     color: #fff;
     background-color: #222;
@@ -759,7 +764,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #15baff;
+    background-color: #27BDA0;
 }
 
 .btn:focus,
@@ -847,12 +852,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #15baff;
+    background: #27BDA0;
 }
 
 ::selection {
     text-shadow: none;
-    background: #15baff;
+    background: #27BDA0;
 }
 
 img::selection {
@@ -864,5 +869,67 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #15baff;
+    webkit-tap-highlight-color: #27BDA0;
+}
+
+/* Custom CSS*/
+
+.arrow { 
+
+    display: block;
+
+}
+
+.discover {
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.devices {
+    font-size: 18px;
+    padding-top: 12%;
+    font-family: "Fira Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
+
+.areas {
+    position: relative;
+}
+
+.circumference img{
+    border-width: 8px;
+    border-color: #c8c8c8;
+}
+
+.overlay {
+    color: #fff;
+    font-size: 18px;
+    top:45%;
+    left:0;
+    width: 100%;
+    position: absolute;
+}
+
+#contact {
+    padding-bottom: 70px;
+}
+
+#contact .section-subheading{
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.contact{
+    font-family: "Montserrat";
+    font-size: 17px;
+    color: #fff;
+}
+
+.team-member p{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 17px;
 }
